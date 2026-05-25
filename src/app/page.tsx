@@ -1,4 +1,13 @@
+"use client"
+
+import { useState } from "react"
 export default function Home() {
+  const [showModal, setShowModal] = useState(false)
+  const [name, setName] = useState("")
+const [email, setEmail] = useState("")
+const [whatsapp, setWhatsapp] = useState("")
+const [business, setBusiness] = useState("")
+const [useCase, setUseCase] = useState("")
   return (
     <main className="min-h-screen bg-black text-white">
       <nav className="sticky top-0 z-50 flex items-center justify-between px-8 py-6 border-b border-zinc-900 bg-black/80 backdrop-blur">
@@ -27,14 +36,14 @@ export default function Home() {
           Fast. Simple. Scalable.
         </p>
 
-        <div className="flex gap-4">
+        <div className="flex gap-4 relative z-10">
 
-          <a
-  href="#contact"
-  className="bg-white text-black px-6 py-3 rounded-xl font-semibold"
+          <button
+  onClick={() => setShowModal(true)}
+  className="bg-white text-black px-6 py-3 rounded-xl font-semibold cursor-pointer"
 >
   Get API Access
-</a>
+</button>
 
           <a
   href="#pricing"
@@ -224,6 +233,93 @@ export default function Home() {
     API Endpoint: api.nexaflowinfra.com
   </p>
 </footer>
+{showModal && (
+  <div className="fixed inset-0 z-50 flex items-center justify-center bg-black/80">
+
+    <div className="bg-zinc-900 p-8 rounded-2xl w-full max-w-md">
+
+      <h2 className="text-2xl font-bold mb-6">
+        Get API Access
+      </h2>
+
+      <button
+        onClick={() => setShowModal(false)}
+        className="mb-6 text-gray-400"
+      >
+        Close
+      </button>
+
+      <input
+        
+  value={name}
+  onChange={(e) => setName(e.target.value)}
+  placeholder="Your Name"
+  className="w-full mb-4 px-4 py-3 rounded-xl bg-black border border-zinc-700"
+/>
+      
+
+      <input
+        
+  value={email}
+  onChange={(e) => setEmail(e.target.value)}
+  placeholder="Email"
+  className="w-full mb-4 px-4 py-3 rounded-xl bg-black border border-zinc-700"
+/>
+  
+<input
+  
+  value={whatsapp}
+  onChange={(e) => setWhatsapp(e.target.value)}
+  placeholder="WhatsApp Number"
+  className="w-full mb-4 px-4 py-3 rounded-xl bg-black border border-zinc-700"
+/>
+
+
+<input
+  
+  value={business}
+  onChange={(e) => setBusiness(e.target.value)}
+  placeholder="Business Name"
+  className="w-full mb-4 px-4 py-3 rounded-xl bg-black border border-zinc-700"
+/>
+
+
+<textarea
+  value={useCase}
+  onChange={(e) => setUseCase(e.target.value)}
+  placeholder="What do you want to build with AI?"
+  className="w-full mb-4 px-4 py-3 rounded-xl bg-black border border-zinc-700"
+/>
+
+      <button
+  onClick={() => {
+
+    const message = `Hi NexaFlow,
+
+Name: ${name}
+Email: ${email}
+WhatsApp: ${whatsapp}
+Business: ${business}
+
+Use Case:
+${useCase}`
+
+    const url =
+      "https://wa.me/60176731323?text=" +
+      encodeURIComponent(message)
+
+    window.open(url, "_blank")
+  }}
+
+  className="w-full bg-white text-black py-3 rounded-xl font-bold"
+>
+  Submit
+</button>
+
+    </div>
+
+  </div>
+)}
     </main>
   )
 }
