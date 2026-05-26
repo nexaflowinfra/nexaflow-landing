@@ -28,12 +28,11 @@ const [useCase, setUseCase] = useState("")
       <section className="flex flex-col items-center justify-center text-center py-32 px-6">
 
         <h1 className="text-6xl font-bold mb-6 bg-gradient-to-r from-white to-gray-500 bg-clip-text text-transparent">
-          NexaFlow AI API
+          Reliable AI Infrastructure
         </h1>
 
         <p className="text-xl text-gray-300 max-w-2xl mb-10">
-          Affordable AI API Infrastructure for Malaysia Businesses.
-          Fast. Simple. Scalable.
+          Scalable AI API infrastructure for startups, developers, and businesses in Malaysia.
         </p>
 
         <div className="flex gap-4 relative z-10">
