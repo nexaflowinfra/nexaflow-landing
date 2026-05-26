@@ -224,9 +224,12 @@ const [useCase, setUseCase] = useState("")
           <li>Basic AI API access</li>
           <li>Email support</li>
         </ul>
-        <button className="w-full bg-white text-black py-3 rounded-xl font-semibold">
-          Start Starter
-        </button>
+        <button
+  onClick={() => setShowModal(true)}
+  className="w-full bg-white text-black py-3 rounded-xl font-semibold"
+>
+  Start Starter
+</button>
       </div>
 
       <div className="border border-white p-8 rounded-2xl transition hover:scale-105 bg-white text-black">
@@ -238,7 +241,9 @@ const [useCase, setUseCase] = useState("")
           <li>Priority API access</li>
           <li>WhatsApp support</li>
         </ul>
-        <button className="w-full bg-black text-white py-3 rounded-xl font-semibold">
+        <button 
+        onClick={() => setShowModal(true)}
+        className="w-full bg-black text-white py-3 rounded-xl font-semibold">
           Choose Pro
         </button>
       </div>
@@ -252,7 +257,10 @@ const [useCase, setUseCase] = useState("")
           <li>Custom integration</li>
           <li>Priority WhatsApp support</li>
         </ul>
-        <button className="w-full border border-white py-3 rounded-xl">
+        <button 
+          onClick={() => setShowModal(true)}
+          className="w-full border border-white py-3 rounded-xl"
+        >
           Contact Sales
         </button>
       </div>
