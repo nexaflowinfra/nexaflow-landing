@@ -12,9 +12,16 @@ const [useCase, setUseCase] = useState("")
     <main className="min-h-screen bg-black text-white">
       <nav className="sticky top-0 z-50 flex items-center justify-between px-8 py-6 border-b border-zinc-900 bg-black/80 backdrop-blur">
 
-  <h1 className="text-2xl font-bold">
+<div className="flex items-center gap-3">
+  <img
+    src="/logo2.png"
+    alt="NexaFlow Logo"
+    className="h-10 w-10 rounded-full"
+  />
+  <span className="text-2xl font-bold">
     NexaFlow
-  </h1>
+  </span>
+</div>
 
   <div className="flex gap-6 text-sm text-gray-300">
 
@@ -79,6 +86,40 @@ const [useCase, setUseCase] = useState("")
   </div>
 
 </section>
+<section className="py-24 px-6 bg-black">
+
+  <div className="max-w-6xl mx-auto text-center">
+
+    <h2 className="text-4xl font-bold mb-6">
+      Local Support for Malaysia Businesses
+    </h2>
+
+    <p className="text-gray-400 max-w-3xl mx-auto mb-12">
+      NexaFlow provides local assistance for businesses that need help with AI API setup, integration, and ongoing usage.
+    </p>
+
+    <div className="grid md:grid-cols-3 gap-8">
+
+      <div className="border border-zinc-800 p-8 rounded-2xl transition hover:scale-105">
+        <h3 className="text-2xl font-semibold mb-4">WhatsApp Support</h3>
+        <p className="text-gray-400">Get help directly through WhatsApp when setting up your AI API.</p>
+      </div>
+
+      <div className="border border-zinc-800 p-8 rounded-2xl transition hover:scale-105">
+        <h3 className="text-2xl font-semibold mb-4">Setup Assistance</h3>
+        <p className="text-gray-400">We help you understand API keys, credits, usage, and integration flow.</p>
+      </div>
+
+      <div className="border border-zinc-800 p-8 rounded-2xl transition hover:scale-105">
+        <h3 className="text-2xl font-semibold mb-4">Business Friendly</h3>
+        <p className="text-gray-400">Built for SMEs, agencies, developers, and automation projects in Malaysia.</p>
+      </div>
+
+    </div>
+
+  </div>
+
+</section>
       <section id="features" className="py-24 px-6 bg-zinc-950">
 
   <div className="max-w-6xl mx-auto">
@@ -124,6 +165,46 @@ const [useCase, setUseCase] = useState("")
   </div>
 
 </section>
+<section className="py-24 px-6 bg-zinc-950">
+
+  <div className="max-w-6xl mx-auto text-center">
+
+    <h2 className="text-4xl font-bold mb-6">
+      Built for Scale & Reliability
+    </h2>
+
+    <p className="text-gray-400 max-w-3xl mx-auto mb-12">
+      NexaFlow infrastructure is designed to support AI automation, business workflows, and scalable API usage with stable performance.
+    </p>
+
+    <div className="grid md:grid-cols-3 gap-8">
+
+      <div className="border border-zinc-800 p-8 rounded-2xl">
+        <h3 className="text-2xl font-semibold mb-4">Fast Response</h3>
+        <p className="text-gray-400">
+          Optimized AI API infrastructure with low latency response times.
+        </p>
+      </div>
+
+      <div className="border border-zinc-800 p-8 rounded-2xl">
+        <h3 className="text-2xl font-semibold mb-4">Scalable Usage</h3>
+        <p className="text-gray-400">
+          Built to support automation workflows and high-volume API requests.
+        </p>
+      </div>
+
+      <div className="border border-zinc-800 p-8 rounded-2xl">
+        <h3 className="text-2xl font-semibold mb-4">Reliable Infrastructure</h3>
+        <p className="text-gray-400">
+          Stable AI infrastructure designed for modern business operations.
+        </p>
+      </div>
+
+    </div>
+
+  </div>
+
+</section>
 <section id="pricing" className="py-24 px-6 bg-black">
 
   <div className="max-w-6xl mx-auto text-center">
@@ -143,7 +224,7 @@ const [useCase, setUseCase] = useState("")
         <p className="text-4xl font-bold mb-6">RM29</p>
         <p className="text-gray-400 mb-6">For testing and small projects.</p>
         <ul className="text-gray-300 space-y-3 mb-8">
-          <li>10,000 credits</li>
+          <li>10,000 credits ≈ 100 AI Messages</li>
           <li>Basic AI API access</li>
           <li>Email support</li>
         </ul>
@@ -157,7 +238,7 @@ const [useCase, setUseCase] = useState("")
         <p className="text-4xl font-bold mb-6">RM99</p>
         <p className="text-gray-700 mb-6">For businesses and automation.</p>
         <ul className="space-y-3 mb-8">
-          <li>100,000 credits</li>
+          <li>100,000 credits ≈ 1,000 AI Messages</li>
           <li>Priority API access</li>
           <li>WhatsApp support</li>
         </ul>
@@ -171,7 +252,7 @@ const [useCase, setUseCase] = useState("")
         <p className="text-4xl font-bold mb-6">RM399</p>
         <p className="text-gray-400 mb-6">For teams and higher usage.</p>
         <ul className="text-gray-300 space-y-3 mb-8">
-          <li>1,000,000 credits</li>
+          <li>1,000,000 credits ≈ 10,000 AI Messages</li>
           <li>Custom integration</li>
           <li>Priority WhatsApp support</li>
         </ul>
@@ -220,6 +301,25 @@ const [useCase, setUseCase] = useState("")
     className="inline-block bg-white text-black px-10 py-5 rounded-2xl font-bold text-lg transition hover:scale-105"
   >
     Get Started Now
+  </a>
+
+</section>
+<section className="py-24 px-6 text-center bg-black">
+
+  <h2 className="text-4xl font-bold mb-6">
+    Ready to Build with AI?
+  </h2>
+
+  <p className="text-gray-400 max-w-2xl mx-auto mb-10">
+    Start integrating scalable AI infrastructure for your business, automation, or application today.
+  </p>
+
+  <a
+    href="https://wa.me/60176731323"
+    target="_blank"
+    className="inline-block bg-white text-black px-8 py-4 rounded-2xl font-semibold transition hover:scale-105"
+  >
+    Get API Access
   </a>
 
 </section>
