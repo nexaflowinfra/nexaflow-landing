@@ -13,14 +13,10 @@ const [useCase, setUseCase] = useState("")
       <nav className="sticky top-0 z-50 flex items-center justify-between px-8 py-6 border-b border-zinc-900 bg-black/80 backdrop-blur">
 
 <div className="flex items-center gap-3">
-  <img
-    src="/logo2.png"
-    alt="NexaFlow Logo"
-    className="h-10 w-10 rounded-full"
-  />
-  <span className="text-2xl font-bold">
-    NexaFlow
-  </span>
+<span className="text-2xl font-bold">
+  NexaFlow
+</span>
+
 </div>
 
   <div className="flex gap-6 text-sm text-gray-300">
@@ -418,7 +414,13 @@ ${useCase}`
     </div>
 
   </div>
-)}
+)}<a
+  href="https://wa.me/60176731323?text=Hi%20NexaFlow%2C%20I%20want%20to%20know%20more%20about%20AI%20API"
+  target="_blank"
+  className="fixed bottom-6 right-6 z-50 rounded-full bg-green-500 px-6 py-4 font-bold text-black shadow-lg transition hover:scale-110"
+>
+  WhatsApp Us
+</a>
     </main>
   )
 }
